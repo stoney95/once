@@ -1,6 +1,9 @@
-# once
+> [!WARNING]  
+> This project is a PoC. So, expect things to fail. In case you have remarks / questions I am happy to discuss them.
 
-once is a Python package designed to enforce coding guidelines effortlessly. It allows software architects to wrap all functions, classes, methods, etc., with decorators or apply metaclasses to all classes, ensuring consistent and maintainable codebases.
+# once - Simplify Your Codebase with Universal Decorators and Metaclasses
+
+Welcome to `once`, the ultimate Python package for streamlining your code! With once, you can define decorators and metaclasses in a single location and apply them globally to functions and classes. This powerful tool enhances code maintainability, readability, and efficiency, making your development process smoother and more productive.
 
 ## Features
 
@@ -23,8 +26,10 @@ Use `once` at the entrypoint of your application. The example showcases how you 
 
 ![](./once-demo-ezgif.com-optimize.gif)
 
+The example-code can be found [here](https://github.com/stoney95/once-example). The example is a modification of an example from [ArjanCodes](https://github.com/ArjanCodes/betterpython/tree/main/3%20-%20strategy%20pattern).
+
 ### Modify Functions:
-With once you can define custom decorators and apply them to all functions in your codebase.
+With `once` you can define custom decorators and apply them to all functions in your codebase.
 
 ```python
 import once
