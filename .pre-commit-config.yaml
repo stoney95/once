@@ -1,0 +1,35 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.3.5
+    hooks:
+      - id: ruff
+        args: [ --fix ]
+      - id: ruff-format
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.9.0
+    hooks:
+      - id: mypy
+        args: [--ignore-missing-imports, --no-namespace-packages, --install-types, --non-interactive]
+        exclude: "test/"
+  - repo: https://github.com/PyCQA/pydocstyle
+    rev: 6.3.0
+    hooks:
+      - id: pydocstyle
+        args: ["--add-ignore=D100,D101,D104,D107"]
+        exclude: "database/migrations/env.py"
+  - repo: https://github.com/terrencepreilly/darglint
+    rev: v1.8.1
+    hooks:
+      - id: darglint
+  - repo: https://github.com/PyCQA/flake8
+    rev: 7.0.0
+    hooks:
+    -   id: flake8
+  - repo: https://github.com/python-poetry/poetry
+    rev: '1.8.2'
+    hooks:
+    -   id: poetry-check
+    -   id: poetry-lock
+    -   id: poetry-export
+        args: ["--without=dev", "--with-credentials", "-o", "requirements.txt"]
+

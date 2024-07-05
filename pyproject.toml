@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "once"
+version = "0.1.0"
+description = "A package for all streamlining enthusiasts. Enables you to apply decorators to all types of python entities."
+authors = ["Simon Steinheber <simon@steinheber.info>"]
+readme = "README.md"
+packages = [
+    { include = "once", from = "." },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4"
+isort = "^5.13.2"
+
+[tool.poetry.group.dev.dependencies]
+commitizen = "^3.27.0"
+pytest = "^8.2.2"
+pre-commit = "^3.7.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  ".",
+  "test"
+]
