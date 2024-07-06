@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "once"
+name = "once-and-for-all"
 version = "0.1.0"
-description = "A package for all streamlining enthusiasts. Enables you to apply decorators to all types of python entities."
+description = "A package for all streamlining enthusiasts. Apply universal Decorators and Metaclasses to your codebase."
 authors = ["Simon Steinheber <simon@steinheber.info>"]
 readme = "README.md"
 packages = [

@@ -17,3 +17,4 @@ env/
 
 # IDE
 .vscode/
+.pypi-token.txt

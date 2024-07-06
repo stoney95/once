@@ -17,7 +17,7 @@ Welcome to `once`, the ultimate Python package for streamlining your code! With 
 To install the `once` package, simply run:
 
 ```sh
-pip install once
+pip install once-and-for-all
 ```
 
 ## Usage
@@ -33,7 +33,6 @@ With `once` you can define custom decorators and apply them to all functions in 
 
 ```python
 import once
-import logging
 
 from coding_guidelines import log_exceptions # <- This is a decorator
 from some_custom_package import my_module
